@@ -1,0 +1,194 @@
+body{
+    font:15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9));
+}
+/*---------------------Global Styles------------------*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+.btn{
+    height:38px;
+    background: #e8491d;
+    border: none;
+    padding: 0px 20px;
+    color:white;
+}
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:white;
+    margin:10px 0px 10px 0px;
+
+}
+.about-main{
+    height: 620px;
+    display: flex;
+}
+/*---------------------------header---------------------------*/
+
+header{
+    background: #35425a;
+    color:#fff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:3px solid #e8491d;
+    position: fixed;
+    width: 100%
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+
+}
+header #branding{
+
+    float: left;
+}
+header #branding h1{
+
+    margin:0;
+}
+header nav{
+    float:right;
+    margin-top:10px;
+}
+header .highlight, header .current a{
+    color:orangered;
+    font-weight: 1000;
+}
+span.highlight{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+header a:hover{
+    color:#ccc;
+    font-weight: bold;
+}
+
+
+/*-------------------------------Showcase------------------------------*/
+#showcase{
+    text-align: center;
+    color:white;
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url("../../../Pics/matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+#showcase h1{
+    margin:100px 0 10px 0;
+    font-size: 55px;
+}
+#showcase p{
+    font-size:20px;
+}
+/*------------------------------newsletter----------------------*/
+#newsletter{
+    padding:15px;
+    color:white;
+    background: #35425a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+   float: right;
+   margin-top:25px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*-------------------------boxes-------------------------------------*/
+#boxes{
+    margin-top:20px;
+}
+#boxes .box{
+    float:left;
+   width:30%;
+    padding: 10px;
+   text-align:center;
+   background-color: lightgray;
+   margin: 0 5px;
+}
+#boxes .box img{
+    width: 90px;
+    height: auto;
+}
+footer{
+    position: relative;
+    top: calc(100% - 92px);
+    background:#e8491d;
+    color:white;
+    margin:20px;
+    padding:20px;
+    text-align:center;
+}
+aside#sidebar{
+    width:30%;
+    float:right;
+    margin-top:10px;
+}
+article#column{
+    width:65%;
+    float:left;
+    margin-top: 20px;
+   color:black;
+    padding: 5px;
+
+}
+ul#services li{
+    list-style-type: none;
+    padding: 20px;
+    border:1px  solid gray;
+    margin-bottom:5px;
+    background: lightgray;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+
+    width:90%;
+    padding:5px;
+    
+}
+
+
+/*-------------media queries-------------*/
+@media (max-width:768px){
+
+    header #branding,
+    header nav,
+    header nav li, #newsletter h1, #newsletter form,
+    #boxes .box, aside#sidebar, article#column
+    {
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+
+    header nav, #newsletter h1{
+        margin-bottom:5px;
+    }
+    #newsletter button, #newsletter input[type="email"], #sidebar button{
+        width:100%;
+    }
+    #newsletter form{
+        margin-top:0px;
+    }
+   
+}
